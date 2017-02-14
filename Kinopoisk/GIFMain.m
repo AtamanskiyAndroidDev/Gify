@@ -51,17 +51,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     GIFCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    NSArray *array = @[@"https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif", @"http://media1.giphy.com/media/Pyu4tX4iiOLHa/giphy.gif", @"https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif", @"https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif", @"https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif"];
     for (NSIndexPath *indexVisible in tableView.indexPathsForVisibleRows) {
         CGRect cellRect = [tableView rectForRowAtIndexPath:indexVisible];
         BOOL isVisible = CGRectContainsRect(tableView.bounds, cellRect);
         if (isVisible) {
-            [cell setupCell:array[indexPath.row]];
+ //           [cell setupCell:array[indexPath.row]];
             NSLog(@"%@", [NSString stringWithFormat:@"%ld",(long)indexVisible.row]);
         } else {
             [cell stopAnimated];

@@ -11,7 +11,7 @@
 @implementation GIFModel
 
 + (NSString *)primaryKey{
-    return @"userId";
+    return @"id";
 }
 
 @end
