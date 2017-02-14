@@ -16,7 +16,6 @@
 //{
 //    RLMRealm *realm;
 //}
-@property (nonatomic, strong) RLMRealm *realm;
 
 @end
 
@@ -30,6 +29,7 @@
 - (void) addModel: (GIFModel *) model{
     [_realm transactionWithBlock:^{
         [_realm addOrUpdateObject:model];
+        [_realm commitWriteTransaction];
     }];
 }
 
@@ -40,7 +40,7 @@
     }];
 }
 
-- (GIFModel *) getModel: (int) row {
+- (GIFModel *) getModel: (NSInteger) row {
     const RLMResults<GIFModel *> *allModel = [GIFModel allObjects];
     return allModel[row];
 }

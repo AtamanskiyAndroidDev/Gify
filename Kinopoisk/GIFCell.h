@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "FLAnimatedImage.h"
+#import "GIFModel.h"
 
 @interface GIFCell : UITableViewCell
-- (void)setupCell: (NSString *) gifImage;
+- (void)setupCell: (GIFModel *) gifImage;
 - (void) stopAnimated;
 @property (weak, nonatomic) IBOutlet FLAnimatedImageView *gif;
 

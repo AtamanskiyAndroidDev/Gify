@@ -22,10 +22,11 @@
     // Configure the view for the selected state
 }
 
-- (void)setupCell: (NSString *) gifImage{
+- (void)setupCell: (GIFModel *) gifImage{
+    NSString *originalImage = gifImage.originalImage;
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
         //Background Thread
-        FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfURL:[NSURL URLWithString: gifImage]]];
+        FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfURL:[NSURL URLWithString: originalImage]]];
         dispatch_async(dispatch_get_main_queue(), ^(void){
             //Main
                 _gif.animatedImage = image;

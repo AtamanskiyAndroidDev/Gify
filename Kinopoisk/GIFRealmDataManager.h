@@ -10,8 +10,10 @@
 
 @interface GIFRealmDataManager : NSObject
 
+@property (nonatomic, strong) RLMRealm *realm;
+
 - (RLMResults<GIFModel *> *) getAll;
-- (GIFModel *) getModel: (int) row;
+- (GIFModel *) getModel: (NSInteger) row;
 - (void) deleteAll;
 - (void) addModel: (GIFModel *) model;
 
