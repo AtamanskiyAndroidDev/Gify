@@ -6,6 +6,8 @@ target 'Kinopoisk' do
  pod 'Realm', '~> 2.4'
  pod 'FLAnimatedImage', '~> 1.0'
  pod 'AFNetworking', '~> 3.1'
+ pod 'SDWebImage', '~> 4.0'
+ pod 'WMPageController', '~> 2.2'
   # Pods for Kinopoisk
 
 end

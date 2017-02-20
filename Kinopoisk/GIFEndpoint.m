@@ -15,7 +15,7 @@
 {
     Endpoint endpoint;
 }
-- (NSString*) path;
+- (NSString*)path;
 
 @end
 
@@ -23,7 +23,8 @@
 
 NSString * const API_KEY = @"dc6zaTOxFJmzC";
 
-- (id) initWithEndpoint: (Endpoint) gifEndpoint{
+- (id)initWithEndpoint:(Endpoint)gifEndpoint
+{
     self = [super init];
     if (self) {
         endpoint = gifEndpoint;
@@ -31,14 +32,16 @@ NSString * const API_KEY = @"dc6zaTOxFJmzC";
     return self;
 }
 
-- (HTTPMethod) httpMethod {
+- (HTTPMethod)httpMethod
+{
     switch (endpoint) {
         default:
             return GET;
     }
 }
 
-- (NSString*) path{
+- (NSString*)path
+{
     switch (endpoint) {
         case Trending:
             return @"/v1/gifs/trending";
@@ -49,7 +52,8 @@ NSString * const API_KEY = @"dc6zaTOxFJmzC";
     }
 }
 
-- (NSString *)url{
+- (NSString *)url
+{
     NSString *baseUrl = BASE_URL;
     return [baseUrl stringByAppendingPathComponent: [self path]];
 }

@@ -11,6 +11,6 @@
 
 @interface AFHTTPSessionManager (ApiManager)
 
-- (NSURLSessionDataTask *) apiRequest: (NSMutableDictionary *) parameters endpoint: (GIFEndpoint*) endpoint success:(void (^)(NSURLSessionDataTask *operation, id responseObject))success failure:(void (^)(NSURLSessionDataTask *operation, NSError *error))failure;
+- (NSURLSessionDataTask *) apiRequest: (NSMutableDictionary *)parameters endpoint:(GIFEndpoint *)endpoint success:(void (^)(NSURLSessionDataTask *operation, id responseObject))success failure:(void (^)(NSURLSessionDataTask *operation, NSError *error))failure;
 
 @end

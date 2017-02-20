@@ -9,10 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "FLAnimatedImage.h"
 #import "GIFModel.h"
+#import "CustomAvatar.h"
 
 @interface GIFCell : UITableViewCell
-- (void)setupCell: (GIFModel *) gifImage;
-- (void) stopAnimated;
+{
+    NSString *originalImage;
+}
+
+- (void)setupCell:(GIFModel *)gifImage;
 @property (weak, nonatomic) IBOutlet FLAnimatedImageView *gif;
+@property (weak, nonatomic) IBOutlet CustomAvatar *avatar;
+
+@property (weak, nonatomic) IBOutlet UILabel *userName;
+
+@property (weak, nonatomic) IBOutlet UILabel *date;
+@property (weak, nonatomic) IBOutlet UILabel *slug;
 
 @end

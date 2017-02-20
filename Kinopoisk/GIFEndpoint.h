@@ -21,9 +21,9 @@ typedef NS_ENUM(NSInteger, Endpoint) {
     Search
 };
 
-- (id) initWithEndpoint: (Endpoint) gifEndpoint;
-- (HTTPMethod) httpMethod;
-- (NSString*) url;
+- (id)initWithEndpoint:(Endpoint)gifEndpoint;
+- (HTTPMethod)httpMethod;
+- (NSString*)url;
 extern NSString* const API_KEY;
 
 @end

@@ -21,31 +21,36 @@
 
 @implementation GIFRealmDataManager
 
-- (id) init {
+- (id)init
+{
     _realm = [RLMRealm defaultRealm];
     return self;
 }
 
-- (void) addModel: (GIFModel *) model{
+- (void)addModel:(GIFModel *)model
+{
     [_realm transactionWithBlock:^{
         [_realm addOrUpdateObject:model];
         [_realm commitWriteTransaction];
     }];
 }
 
-- (void) deleteAll {
+- (void)deleteAll
+{
     RLMResults<GIFModel *> *allModel = [GIFModel allObjects];
     [_realm transactionWithBlock:^{
         [_realm deleteObjects:allModel];
     }];
 }
 
-- (GIFModel *) getModel: (NSInteger) row {
+- (GIFModel *)getModel:(NSInteger)row
+{
     const RLMResults<GIFModel *> *allModel = [GIFModel allObjects];
     return allModel[row];
 }
 
-- (RLMResults<GIFModel *> *) getAll {
+- (RLMResults<GIFModel *> *)getAll
+{
     RLMResults<GIFModel *> *allModel = [GIFModel allObjects];
     return allModel;
 }

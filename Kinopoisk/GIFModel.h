@@ -14,6 +14,7 @@
 @property NSString *id;
 @property NSString *slug;
 @property NSString *originalImage;
+@property NSString *date;
 
 @property GIFUserModel *user;
 

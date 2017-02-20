@@ -12,9 +12,9 @@
 
 @property (nonatomic, strong) RLMRealm *realm;
 
-- (RLMResults<GIFModel *> *) getAll;
-- (GIFModel *) getModel: (NSInteger) row;
-- (void) deleteAll;
-- (void) addModel: (GIFModel *) model;
+- (RLMResults<GIFModel *> *)getAll;
+- (GIFModel *)getModel:(NSInteger)row;
+- (void)deleteAll;
+- (void)addModel:(GIFModel *)model;
 
 @end

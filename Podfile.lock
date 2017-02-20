@@ -18,17 +18,25 @@ PODS:
   - Realm (2.4.2):
     - Realm/Headers (= 2.4.2)
   - Realm/Headers (2.4.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - WMPageController (2.2.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1)
   - FLAnimatedImage (~> 1.0)
   - Realm (~> 2.4)
+  - SDWebImage (~> 4.0)
+  - WMPageController (~> 2.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Realm: d27b758e12d62a3371879a065d4c40aa212c5a54
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  WMPageController: 181bcc9b1fb7c9c3466bff66012552953a547d28
 
-PODFILE CHECKSUM: 7df2d702c24ee489744e1b9888a686415ef5f3b3
+PODFILE CHECKSUM: b94bd3da0f880d56737bdad2a00d2719913d0bb3
 
 COCOAPODS: 1.2.0

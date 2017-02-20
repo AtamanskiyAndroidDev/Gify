@@ -10,9 +10,4 @@
 
 @implementation GIFUserModel
 
-
-+ (NSString *)primaryKey{
-    return @"userId";
-}
-
 @end

@@ -11,7 +11,8 @@
 
 @implementation AFHTTPSessionManager (ApiManager)
 
-- (NSURLSessionDataTask *)apiRequest:(NSMutableDictionary *)parameters endpoint:(GIFEndpoint *)endpoint success:(void (^)(NSURLSessionDataTask *, id))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure{
+- (NSURLSessionDataTask *)apiRequest:(NSMutableDictionary *)parameters endpoint:(GIFEndpoint *)endpoint success:(void (^)(NSURLSessionDataTask *, id))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure
+{
     switch (endpoint.httpMethod) {
         case GET:
             return [self GET: endpoint.url  parameters:parameters progress:NULL success:success failure:failure];

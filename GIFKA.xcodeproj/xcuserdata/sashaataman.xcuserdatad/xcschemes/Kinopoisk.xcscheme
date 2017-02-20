@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2509DB761E51EDDE00DF053B"
-               BuildableName = "Kinopoisk.app"
+               BuildableName = "GIFKA.app"
                BlueprintName = "Kinopoisk"
-               ReferencedContainer = "container:Kinopoisk.xcodeproj">
+               ReferencedContainer = "container:GIFKA.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2509DB761E51EDDE00DF053B"
-            BuildableName = "Kinopoisk.app"
+            BuildableName = "GIFKA.app"
             BlueprintName = "Kinopoisk"
-            ReferencedContainer = "container:Kinopoisk.xcodeproj">
+            ReferencedContainer = "container:GIFKA.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2509DB761E51EDDE00DF053B"
-            BuildableName = "Kinopoisk.app"
+            BuildableName = "GIFKA.app"
             BlueprintName = "Kinopoisk"
-            ReferencedContainer = "container:Kinopoisk.xcodeproj">
+            ReferencedContainer = "container:GIFKA.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2509DB761E51EDDE00DF053B"
-            BuildableName = "Kinopoisk.app"
+            BuildableName = "GIFKA.app"
             BlueprintName = "Kinopoisk"
-            ReferencedContainer = "container:Kinopoisk.xcodeproj">
+            ReferencedContainer = "container:GIFKA.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

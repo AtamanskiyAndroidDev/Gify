@@ -9,7 +9,7 @@
 
 @interface GIFNetworkManager : NSObject
 
-+ (instancetype) sharedInstance;
++ (instancetype)sharedInstance;
 - (void)fetchTrending;
 
 @end

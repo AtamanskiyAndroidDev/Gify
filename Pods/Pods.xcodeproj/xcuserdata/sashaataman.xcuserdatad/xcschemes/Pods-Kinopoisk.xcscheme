@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "377B9CC13B7A575414C21D44E152F0DF"
+               BlueprintIdentifier = "DCE5147D6C8F25C029326C10366FEDDE"
                BuildableName = "Pods_Kinopoisk.framework"
                BlueprintName = "Pods-Kinopoisk"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "377B9CC13B7A575414C21D44E152F0DF"
+            BlueprintIdentifier = "DCE5147D6C8F25C029326C10366FEDDE"
             BuildableName = "Pods_Kinopoisk.framework"
             BlueprintName = "Pods-Kinopoisk"
             ReferencedContainer = "container:Pods.xcodeproj">

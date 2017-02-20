@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Kinopoisk/GIFMain.m"
-            timestampString = "508779013.100717"
+            filePath = "Kinopoisk/CircularImage.m"
+            timestampString = "508852115.149744"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "-applyRounding:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Kinopoisk/GIFMain.m"
-            timestampString = "508779410.974718"
+            filePath = "Kinopoisk/GIFSegmentedControl.m"
+            timestampString = "509299671.786897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-selectedIndex"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

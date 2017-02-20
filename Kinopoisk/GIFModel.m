@@ -10,7 +10,8 @@
 
 @implementation GIFModel
 
-+ (NSString *)primaryKey{
++ (NSString *)primaryKey
+{
     return @"id";
 }
 

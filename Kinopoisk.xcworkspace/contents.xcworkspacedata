@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Kinopoisk.xcodeproj">
+      location = "group:/Users/sashaataman/Documents/Xcode Project/Kinopoisk/GIFKA.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
