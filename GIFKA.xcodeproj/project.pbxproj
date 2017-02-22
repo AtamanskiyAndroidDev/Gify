@@ -7,61 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2509DB7C1E51EDDE00DF053B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2509DB7B1E51EDDE00DF053B /* main.m */; };
-		2509DB7F1E51EDDE00DF053B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2509DB7E1E51EDDE00DF053B /* AppDelegate.m */; };
-		2509DB851E51EDDE00DF053B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2509DB831E51EDDE00DF053B /* Main.storyboard */; };
 		2509DB871E51EDDE00DF053B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2509DB861E51EDDE00DF053B /* Assets.xcassets */; };
-		2509DB8A1E51EDDE00DF053B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2509DB881E51EDDE00DF053B /* LaunchScreen.storyboard */; };
-		2509DB961E52069D00DF053B /* GIFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2509DB951E52069D00DF053B /* GIFCell.m */; };
-		2509DB991E5206D300DF053B /* GIFMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2509DB981E5206D300DF053B /* GIFMain.m */; };
-		250DB9411E52EF9000342946 /* Loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 250DB9401E52EF9000342946 /* Loading.gif */; };
-		250DB9441E52F61B00342946 /* GIFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 250DB9431E52F61B00342946 /* GIFModel.m */; };
-		250DB9471E52F71B00342946 /* GIFUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 250DB9461E52F71B00342946 /* GIFUserModel.m */; };
-		250DB9601E530FD900342946 /* AFHTTPSessionManager+ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 250DB95F1E530FD900342946 /* AFHTTPSessionManager+ApiManager.m */; };
-		250DB9621E531AF600342946 /* GIFEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 250DB9611E531AF600342946 /* GIFEndpoint.m */; };
-		250DB9671E53345500342946 /* GIFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 250DB9661E53345500342946 /* GIFNetworkManager.m */; };
-		250DB96F1E534A3400342946 /* GIFRealmDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 250DB96E1E534A3400342946 /* GIFRealmDataManager.m */; };
-		25135DFC1E5AEEBD0007A969 /* GIFSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 25135DFB1E5AEEBD0007A969 /* GIFSegmentedControl.m */; };
-		251917681E547B24002784F7 /* UIView+CircularView.m in Sources */ = {isa = PBXBuildFile; fileRef = 251917671E547B24002784F7 /* UIView+CircularView.m */; };
-		2519176E1E547B92002784F7 /* CustomAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519176D1E547B92002784F7 /* CustomAvatar.m */; };
-		258255751E54D40E0002470F /* NSString+SplitString.m in Sources */ = {isa = PBXBuildFile; fileRef = 258255741E54D40E0002470F /* NSString+SplitString.m */; };
+		2578DD4F1E5D8CC300737680 /* CustomAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD4C1E5D8CC300737680 /* CustomAvatar.m */; };
+		2578DD501E5D8CC300737680 /* GIFSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD4E1E5D8CC300737680 /* GIFSegmentedControl.m */; };
+		2578DD551E5D8D4100737680 /* NSString+SplitString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD521E5D8D4100737680 /* NSString+SplitString.m */; };
+		2578DD561E5D8D4100737680 /* UIView+CircularView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD541E5D8D4100737680 /* UIView+CircularView.m */; };
+		2578DD591E5D8D7300737680 /* GIFRealmDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD581E5D8D7300737680 /* GIFRealmDataManager.m */; };
+		2578DD5E1E5D8D9700737680 /* GIFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD5B1E5D8D9700737680 /* GIFNetworkManager.m */; };
+		2578DD5F1E5D8D9700737680 /* GIFUrlSessionDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD5D1E5D8D9700737680 /* GIFUrlSessionDataTask.m */; };
+		2578DD641E5D8DD600737680 /* AFHTTPSessionManager+ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD611E5D8DD600737680 /* AFHTTPSessionManager+ApiManager.m */; };
+		2578DD651E5D8DD600737680 /* GIFEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD631E5D8DD600737680 /* GIFEndpoint.m */; };
+		2578DD681E5D8F3700737680 /* GIFMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD671E5D8F3700737680 /* GIFMain.m */; };
+		2578DD6B1E5D8F5100737680 /* GIFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD6A1E5D8F5100737680 /* GIFCell.m */; };
+		2578DD6E1E5D8F6800737680 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD6D1E5D8F6800737680 /* AppDelegate.m */; };
+		2578DD731E5D8F8F00737680 /* GIFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD701E5D8F8F00737680 /* GIFModel.m */; };
+		2578DD741E5D8F8F00737680 /* GIFUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD721E5D8F8F00737680 /* GIFUserModel.m */; };
+		2578DD771E5D8FB600737680 /* Loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2578DD751E5D8FB600737680 /* Loading.gif */; };
+		2578DD781E5D8FB600737680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2578DD761E5D8FB600737680 /* main.m */; };
+		2578DD7A1E5D8FC200737680 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2578DD791E5D8FC200737680 /* Info.plist */; };
+		2578DD7D1E5D8FE400737680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2578DD7B1E5D8FE400737680 /* LaunchScreen.storyboard */; };
+		2578DD7E1E5D8FE400737680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2578DD7C1E5D8FE400737680 /* Main.storyboard */; };
 		CF67174B0FE121344CEE8948 /* Pods_Kinopoisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731084B8C8F8DC54916D356A /* Pods_Kinopoisk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2509DB771E51EDDE00DF053B /* GIFKA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFKA.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2509DB7B1E51EDDE00DF053B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2509DB7D1E51EDDE00DF053B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2509DB7E1E51EDDE00DF053B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2509DB841E51EDDE00DF053B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2509DB861E51EDDE00DF053B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2509DB891E51EDDE00DF053B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2509DB8B1E51EDDE00DF053B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2509DB941E52069D00DF053B /* GIFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFCell.h; sourceTree = "<group>"; };
-		2509DB951E52069D00DF053B /* GIFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFCell.m; sourceTree = "<group>"; };
-		2509DB971E5206D300DF053B /* GIFMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFMain.h; sourceTree = "<group>"; };
-		2509DB981E5206D300DF053B /* GIFMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFMain.m; sourceTree = "<group>"; };
-		250DB9401E52EF9000342946 /* Loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Loading.gif; sourceTree = "<group>"; };
-		250DB9421E52F61B00342946 /* GIFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFModel.h; sourceTree = "<group>"; };
-		250DB9431E52F61B00342946 /* GIFModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFModel.m; sourceTree = "<group>"; };
-		250DB9451E52F71B00342946 /* GIFUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFUserModel.h; sourceTree = "<group>"; };
-		250DB9461E52F71B00342946 /* GIFUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFUserModel.m; sourceTree = "<group>"; };
-		250DB95E1E530FD900342946 /* AFHTTPSessionManager+ApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+ApiManager.h"; sourceTree = "<group>"; };
-		250DB95F1E530FD900342946 /* AFHTTPSessionManager+ApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+ApiManager.m"; sourceTree = "<group>"; };
-		250DB9611E531AF600342946 /* GIFEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFEndpoint.m; sourceTree = "<group>"; };
-		250DB9631E53292200342946 /* GIFEndpoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFEndpoint.h; sourceTree = "<group>"; };
-		250DB9661E53345500342946 /* GIFNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFNetworkManager.m; sourceTree = "<group>"; };
-		250DB9681E53349A00342946 /* GIFNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFNetworkManager.h; sourceTree = "<group>"; };
-		250DB96E1E534A3400342946 /* GIFRealmDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFRealmDataManager.m; sourceTree = "<group>"; };
-		250DB9701E534A4600342946 /* GIFRealmDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFRealmDataManager.h; sourceTree = "<group>"; };
-		25135DFB1E5AEEBD0007A969 /* GIFSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFSegmentedControl.m; sourceTree = "<group>"; };
-		25135DFD1E5AEF240007A969 /* GIFSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFSegmentedControl.h; sourceTree = "<group>"; };
-		251917661E547B24002784F7 /* UIView+CircularView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CircularView.h"; sourceTree = "<group>"; };
-		251917671E547B24002784F7 /* UIView+CircularView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CircularView.m"; sourceTree = "<group>"; };
-		2519176C1E547B92002784F7 /* CustomAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAvatar.h; sourceTree = "<group>"; };
-		2519176D1E547B92002784F7 /* CustomAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAvatar.m; sourceTree = "<group>"; };
-		258255731E54D40E0002470F /* NSString+SplitString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SplitString.h"; sourceTree = "<group>"; };
-		258255741E54D40E0002470F /* NSString+SplitString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SplitString.m"; sourceTree = "<group>"; };
+		2578DD4B1E5D8CC300737680 /* CustomAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomAvatar.h; path = View/CustomAvatar.h; sourceTree = "<group>"; };
+		2578DD4C1E5D8CC300737680 /* CustomAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomAvatar.m; path = View/CustomAvatar.m; sourceTree = "<group>"; };
+		2578DD4D1E5D8CC300737680 /* GIFSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFSegmentedControl.h; path = View/GIFSegmentedControl.h; sourceTree = "<group>"; };
+		2578DD4E1E5D8CC300737680 /* GIFSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFSegmentedControl.m; path = View/GIFSegmentedControl.m; sourceTree = "<group>"; };
+		2578DD511E5D8D4100737680 /* NSString+SplitString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SplitString.h"; path = "Extension/NSString+SplitString.h"; sourceTree = "<group>"; };
+		2578DD521E5D8D4100737680 /* NSString+SplitString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SplitString.m"; path = "Extension/NSString+SplitString.m"; sourceTree = "<group>"; };
+		2578DD531E5D8D4100737680 /* UIView+CircularView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+CircularView.h"; path = "Extension/UIView+CircularView.h"; sourceTree = "<group>"; };
+		2578DD541E5D8D4100737680 /* UIView+CircularView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+CircularView.m"; path = "Extension/UIView+CircularView.m"; sourceTree = "<group>"; };
+		2578DD571E5D8D7300737680 /* GIFRealmDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFRealmDataManager.h; path = "Data Manager/GIFRealmDataManager.h"; sourceTree = "<group>"; };
+		2578DD581E5D8D7300737680 /* GIFRealmDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFRealmDataManager.m; path = "Data Manager/GIFRealmDataManager.m"; sourceTree = "<group>"; };
+		2578DD5A1E5D8D9700737680 /* GIFNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFNetworkManager.h; path = Service/GIFNetworkManager.h; sourceTree = "<group>"; };
+		2578DD5B1E5D8D9700737680 /* GIFNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFNetworkManager.m; path = Service/GIFNetworkManager.m; sourceTree = "<group>"; };
+		2578DD5C1E5D8D9700737680 /* GIFUrlSessionDataTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFUrlSessionDataTask.h; path = Service/GIFUrlSessionDataTask.h; sourceTree = "<group>"; };
+		2578DD5D1E5D8D9700737680 /* GIFUrlSessionDataTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFUrlSessionDataTask.m; path = Service/GIFUrlSessionDataTask.m; sourceTree = "<group>"; };
+		2578DD601E5D8DD600737680 /* AFHTTPSessionManager+ApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AFHTTPSessionManager+ApiManager.h"; path = "HTTP Manager/AFHTTPSessionManager+ApiManager.h"; sourceTree = "<group>"; };
+		2578DD611E5D8DD600737680 /* AFHTTPSessionManager+ApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AFHTTPSessionManager+ApiManager.m"; path = "HTTP Manager/AFHTTPSessionManager+ApiManager.m"; sourceTree = "<group>"; };
+		2578DD621E5D8DD600737680 /* GIFEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFEndpoint.h; path = "HTTP Manager/GIFEndpoint.h"; sourceTree = "<group>"; };
+		2578DD631E5D8DD600737680 /* GIFEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFEndpoint.m; path = "HTTP Manager/GIFEndpoint.m"; sourceTree = "<group>"; };
+		2578DD661E5D8F3700737680 /* GIFMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFMain.h; path = Controller/GIFMain.h; sourceTree = "<group>"; };
+		2578DD671E5D8F3700737680 /* GIFMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFMain.m; path = Controller/GIFMain.m; sourceTree = "<group>"; };
+		2578DD691E5D8F5100737680 /* GIFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFCell.h; path = Cell/GIFCell.h; sourceTree = "<group>"; };
+		2578DD6A1E5D8F5100737680 /* GIFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFCell.m; path = Cell/GIFCell.m; sourceTree = "<group>"; };
+		2578DD6C1E5D8F6800737680 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "App Delegate/AppDelegate.h"; sourceTree = "<group>"; };
+		2578DD6D1E5D8F6800737680 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "App Delegate/AppDelegate.m"; sourceTree = "<group>"; };
+		2578DD6F1E5D8F8F00737680 /* GIFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFModel.h; path = Model/GIFModel.h; sourceTree = "<group>"; };
+		2578DD701E5D8F8F00737680 /* GIFModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFModel.m; path = Model/GIFModel.m; sourceTree = "<group>"; };
+		2578DD711E5D8F8F00737680 /* GIFUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFUserModel.h; path = Model/GIFUserModel.h; sourceTree = "<group>"; };
+		2578DD721E5D8F8F00737680 /* GIFUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFUserModel.m; path = Model/GIFUserModel.m; sourceTree = "<group>"; };
+		2578DD751E5D8FB600737680 /* Loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Loading.gif; path = "Supporting Files/Loading.gif"; sourceTree = "<group>"; };
+		2578DD761E5D8FB600737680 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
+		2578DD791E5D8FC200737680 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		2578DD7B1E5D8FE400737680 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/Storyboard/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2578DD7C1E5D8FE400737680 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Storyboard/Main.storyboard; sourceTree = "<group>"; };
 		2D32CA1AC7102F43BA94DFE8 /* Pods-Kinopoisk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kinopoisk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kinopoisk/Pods-Kinopoisk.debug.xcconfig"; sourceTree = "<group>"; };
 		731084B8C8F8DC54916D356A /* Pods_Kinopoisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kinopoisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23B5D59B2B1D1C67A33CCA2 /* Pods-Kinopoisk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kinopoisk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kinopoisk/Pods-Kinopoisk.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,7 +132,7 @@
 				250DB9491E52F87F00342946 /* App Delegate */,
 				250DB9481E52F86F00342946 /* Model */,
 				2509DB861E51EDDE00DF053B /* Assets.xcassets */,
-				2509DB8B1E51EDDE00DF053B /* Info.plist */,
+				2578DD791E5D8FC200737680 /* Info.plist */,
 				2509DB7A1E51EDDE00DF053B /* Supporting Files */,
 			);
 			name = GIFKA;
@@ -138,8 +142,8 @@
 		2509DB7A1E51EDDE00DF053B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				250DB9401E52EF9000342946 /* Loading.gif */,
-				2509DB7B1E51EDDE00DF053B /* main.m */,
+				2578DD751E5D8FB600737680 /* Loading.gif */,
+				2578DD761E5D8FB600737680 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,10 +151,10 @@
 		250DB9481E52F86F00342946 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				250DB9421E52F61B00342946 /* GIFModel.h */,
-				250DB9431E52F61B00342946 /* GIFModel.m */,
-				250DB9451E52F71B00342946 /* GIFUserModel.h */,
-				250DB9461E52F71B00342946 /* GIFUserModel.m */,
+				2578DD6F1E5D8F8F00737680 /* GIFModel.h */,
+				2578DD701E5D8F8F00737680 /* GIFModel.m */,
+				2578DD711E5D8F8F00737680 /* GIFUserModel.h */,
+				2578DD721E5D8F8F00737680 /* GIFUserModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -158,8 +162,8 @@
 		250DB9491E52F87F00342946 /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				2509DB7D1E51EDDE00DF053B /* AppDelegate.h */,
-				2509DB7E1E51EDDE00DF053B /* AppDelegate.m */,
+				2578DD6C1E5D8F6800737680 /* AppDelegate.h */,
+				2578DD6D1E5D8F6800737680 /* AppDelegate.m */,
 			);
 			name = "App Delegate";
 			sourceTree = "<group>";
@@ -167,8 +171,8 @@
 		250DB94B1E52F89A00342946 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				2509DB941E52069D00DF053B /* GIFCell.h */,
-				2509DB951E52069D00DF053B /* GIFCell.m */,
+				2578DD691E5D8F5100737680 /* GIFCell.h */,
+				2578DD6A1E5D8F5100737680 /* GIFCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -176,8 +180,8 @@
 		250DB94C1E52F8A200342946 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2509DB971E5206D300DF053B /* GIFMain.h */,
-				2509DB981E5206D300DF053B /* GIFMain.m */,
+				2578DD661E5D8F3700737680 /* GIFMain.h */,
+				2578DD671E5D8F3700737680 /* GIFMain.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -185,8 +189,8 @@
 		250DB94D1E52F8B100342946 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				2509DB881E51EDDE00DF053B /* LaunchScreen.storyboard */,
-				2509DB831E51EDDE00DF053B /* Main.storyboard */,
+				2578DD7B1E5D8FE400737680 /* LaunchScreen.storyboard */,
+				2578DD7C1E5D8FE400737680 /* Main.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -194,10 +198,10 @@
 		250DB94E1E52F8E100342946 /* HTTP Manager */ = {
 			isa = PBXGroup;
 			children = (
-				250DB95E1E530FD900342946 /* AFHTTPSessionManager+ApiManager.h */,
-				250DB95F1E530FD900342946 /* AFHTTPSessionManager+ApiManager.m */,
-				250DB9611E531AF600342946 /* GIFEndpoint.m */,
-				250DB9631E53292200342946 /* GIFEndpoint.h */,
+				2578DD601E5D8DD600737680 /* AFHTTPSessionManager+ApiManager.h */,
+				2578DD611E5D8DD600737680 /* AFHTTPSessionManager+ApiManager.m */,
+				2578DD621E5D8DD600737680 /* GIFEndpoint.h */,
+				2578DD631E5D8DD600737680 /* GIFEndpoint.m */,
 			);
 			name = "HTTP Manager";
 			sourceTree = "<group>";
@@ -205,8 +209,10 @@
 		250DB9651E5333D200342946 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				250DB9661E53345500342946 /* GIFNetworkManager.m */,
-				250DB9681E53349A00342946 /* GIFNetworkManager.h */,
+				2578DD5A1E5D8D9700737680 /* GIFNetworkManager.h */,
+				2578DD5B1E5D8D9700737680 /* GIFNetworkManager.m */,
+				2578DD5C1E5D8D9700737680 /* GIFUrlSessionDataTask.h */,
+				2578DD5D1E5D8D9700737680 /* GIFUrlSessionDataTask.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -214,8 +220,8 @@
 		250DB9691E53494800342946 /* Data Manager */ = {
 			isa = PBXGroup;
 			children = (
-				250DB96E1E534A3400342946 /* GIFRealmDataManager.m */,
-				250DB9701E534A4600342946 /* GIFRealmDataManager.h */,
+				2578DD571E5D8D7300737680 /* GIFRealmDataManager.h */,
+				2578DD581E5D8D7300737680 /* GIFRealmDataManager.m */,
 			);
 			name = "Data Manager";
 			sourceTree = "<group>";
@@ -223,10 +229,10 @@
 		2519175C1E54715F002784F7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				251917661E547B24002784F7 /* UIView+CircularView.h */,
-				251917671E547B24002784F7 /* UIView+CircularView.m */,
-				258255731E54D40E0002470F /* NSString+SplitString.h */,
-				258255741E54D40E0002470F /* NSString+SplitString.m */,
+				2578DD511E5D8D4100737680 /* NSString+SplitString.h */,
+				2578DD521E5D8D4100737680 /* NSString+SplitString.m */,
+				2578DD531E5D8D4100737680 /* UIView+CircularView.h */,
+				2578DD541E5D8D4100737680 /* UIView+CircularView.m */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -234,10 +240,10 @@
 		2519176F1E547C12002784F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2519176D1E547B92002784F7 /* CustomAvatar.m */,
-				2519176C1E547B92002784F7 /* CustomAvatar.h */,
-				25135DFB1E5AEEBD0007A969 /* GIFSegmentedControl.m */,
-				25135DFD1E5AEF240007A969 /* GIFSegmentedControl.h */,
+				2578DD4B1E5D8CC300737680 /* CustomAvatar.h */,
+				2578DD4C1E5D8CC300737680 /* CustomAvatar.m */,
+				2578DD4D1E5D8CC300737680 /* GIFSegmentedControl.h */,
+				2578DD4E1E5D8CC300737680 /* GIFSegmentedControl.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -304,10 +310,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2509DB8A1E51EDDE00DF053B /* LaunchScreen.storyboard in Resources */,
+				2578DD7E1E5D8FE400737680 /* Main.storyboard in Resources */,
 				2509DB871E51EDDE00DF053B /* Assets.xcassets in Resources */,
-				2509DB851E51EDDE00DF053B /* Main.storyboard in Resources */,
-				250DB9411E52EF9000342946 /* Loading.gif in Resources */,
+				2578DD771E5D8FB600737680 /* Loading.gif in Resources */,
+				2578DD7D1E5D8FE400737680 /* LaunchScreen.storyboard in Resources */,
+				2578DD7A1E5D8FC200737680 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,43 +373,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250DB96F1E534A3400342946 /* GIFRealmDataManager.m in Sources */,
-				2509DB7F1E51EDDE00DF053B /* AppDelegate.m in Sources */,
-				250DB9471E52F71B00342946 /* GIFUserModel.m in Sources */,
-				2519176E1E547B92002784F7 /* CustomAvatar.m in Sources */,
-				250DB9441E52F61B00342946 /* GIFModel.m in Sources */,
-				25135DFC1E5AEEBD0007A969 /* GIFSegmentedControl.m in Sources */,
-				250DB9601E530FD900342946 /* AFHTTPSessionManager+ApiManager.m in Sources */,
-				2509DB961E52069D00DF053B /* GIFCell.m in Sources */,
-				2509DB7C1E51EDDE00DF053B /* main.m in Sources */,
-				258255751E54D40E0002470F /* NSString+SplitString.m in Sources */,
-				251917681E547B24002784F7 /* UIView+CircularView.m in Sources */,
-				250DB9621E531AF600342946 /* GIFEndpoint.m in Sources */,
-				2509DB991E5206D300DF053B /* GIFMain.m in Sources */,
-				250DB9671E53345500342946 /* GIFNetworkManager.m in Sources */,
+				2578DD651E5D8DD600737680 /* GIFEndpoint.m in Sources */,
+				2578DD561E5D8D4100737680 /* UIView+CircularView.m in Sources */,
+				2578DD6E1E5D8F6800737680 /* AppDelegate.m in Sources */,
+				2578DD4F1E5D8CC300737680 /* CustomAvatar.m in Sources */,
+				2578DD641E5D8DD600737680 /* AFHTTPSessionManager+ApiManager.m in Sources */,
+				2578DD551E5D8D4100737680 /* NSString+SplitString.m in Sources */,
+				2578DD781E5D8FB600737680 /* main.m in Sources */,
+				2578DD5E1E5D8D9700737680 /* GIFNetworkManager.m in Sources */,
+				2578DD6B1E5D8F5100737680 /* GIFCell.m in Sources */,
+				2578DD501E5D8CC300737680 /* GIFSegmentedControl.m in Sources */,
+				2578DD731E5D8F8F00737680 /* GIFModel.m in Sources */,
+				2578DD591E5D8D7300737680 /* GIFRealmDataManager.m in Sources */,
+				2578DD741E5D8F8F00737680 /* GIFUserModel.m in Sources */,
+				2578DD5F1E5D8D9700737680 /* GIFUrlSessionDataTask.m in Sources */,
+				2578DD681E5D8F3700737680 /* GIFMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2509DB831E51EDDE00DF053B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2509DB841E51EDDE00DF053B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2509DB881E51EDDE00DF053B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2509DB891E51EDDE00DF053B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2509DB8C1E51EDDE00DF053B /* Debug */ = {
@@ -499,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UAKSUWEB24;
-				INFOPLIST_FILE = Kinopoisk/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Kinopoisk/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atamanskiy.GIFKA;
 				PRODUCT_NAME = GIFKA;
@@ -512,7 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UAKSUWEB24;
-				INFOPLIST_FILE = Kinopoisk/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Kinopoisk/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atamanskiy.GIFKA;
 				PRODUCT_NAME = GIFKA;

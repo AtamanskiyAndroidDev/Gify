@@ -11,5 +11,7 @@
 
 + (instancetype)sharedInstance;
 - (void)fetchTrending;
+- (void)fetchRandom;
+- (void)fetchSearch:(NSString *)query;
 
 @end

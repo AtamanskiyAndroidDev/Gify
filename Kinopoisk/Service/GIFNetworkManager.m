@@ -16,6 +16,9 @@
 @interface GIFNetworkManager ()
 {
     GIFRealmDataManager *dataManager;
+    AFHTTPSessionManager *manager;
+    GIFEndpoint *endpoint;
+    NSMutableDictionary *params;
 }
 @end
 
@@ -24,6 +27,8 @@
 - (id)init
 {
     dataManager = [[GIFRealmDataManager alloc] init];
+    manager = [AFHTTPSessionManager manager];
+    params = [[NSMutableDictionary alloc] init];
     return self;
 }
 
@@ -41,10 +46,50 @@
 
 - (void)fetchTrending
 {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    GIFEndpoint *endpoint = [[GIFEndpoint alloc] initWithEndpoint:Trending];
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    endpoint = [[GIFEndpoint alloc] initWithEndpoint:Trending];
     [params setObject:API_KEY forKey:@"api_key"];
+    [self apiRequest];
+}
+
+- (void)fetchRandom
+{
+    endpoint = [[GIFEndpoint alloc] initWithEndpoint:Random];
+    [params setObject:API_KEY forKey:@"api_key"];
+    [manager apiRequest:params endpoint: endpoint success:^(NSURLSessionDataTask *dataTask, id responseObject){
+        if ((BOOL)[[[[responseObject valueForKey:@"meta"] valueForKey:@"status"] stringValue] isEqualToString:@"200"]){
+            [dataManager deleteAll];
+            NSDictionary *data = [responseObject valueForKey:@"data"];
+            GIFModel *model = [GIFModel new];
+            model.id = data[@"id"];
+            model.slug = @"RANDOM deleted";
+            model.originalImage = data[@"image_original_url"];
+            model.date = @"2016-06-16 06:06:06";
+            
+            GIFUserModel *userModel = [GIFUserModel new];
+            userModel.userName = @"RANDOM";
+            userModel.avatarUrl = @"RANDOM";
+            
+            model.user = userModel;
+            [dataManager addModel:model];
+        } else {
+            // show alert controller
+        }
+    }failure:^(NSURLSessionDataTask *dataTask, NSError *error){
+        // show alert controller
+    }];
+    
+}
+
+- (void)fetchSearch:(NSString *)query
+{
+    endpoint = [[GIFEndpoint alloc] initWithEndpoint:Search];
+    [params setObject:query forKey:@"q"];
+    [params setObject:API_KEY forKey:@"api_key"];
+    [self apiRequest];
+}
+
+- (void)apiRequest
+{
     [manager apiRequest:params endpoint: endpoint success:^(NSURLSessionDataTask *dataTask, id responseObject){
         if ((BOOL)[[[[responseObject valueForKey:@"meta"] valueForKey:@"status"] stringValue] isEqualToString:@"200"]){
             [dataManager deleteAll];
@@ -71,6 +116,7 @@
     }failure:^(NSURLSessionDataTask *dataTask, NSError *error){
         // show alert controller
     }];
+
 }
 
 @end

@@ -12,6 +12,6 @@
 @interface GIFMain : UIViewController<UISearchResultsUpdating, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UIToolbarDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet GIFSegmentedControl *segmentControl;
+- (IBAction)fetchNextRandomGif:(id)sender;
 
 @end

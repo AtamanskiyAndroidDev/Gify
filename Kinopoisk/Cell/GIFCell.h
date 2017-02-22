@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet CustomAvatar *avatar;
 
 @property (weak, nonatomic) IBOutlet UILabel *userName;
+@property (weak, nonatomic) IBOutlet UIButton *next;
 
 @property (weak, nonatomic) IBOutlet UILabel *date;
 @property (weak, nonatomic) IBOutlet UILabel *slug;

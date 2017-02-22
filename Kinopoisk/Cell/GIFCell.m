@@ -10,6 +10,7 @@
 #import "FLAnimatedImage.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "NSString+SplitString.h"
+#import "GIFUrlSessionDataTask.h"
 
 // test
 #import <AFNetworking/AFNetworking.h>
@@ -17,11 +18,13 @@
 @implementation GIFCell
 
 FLAnimatedImage *image;
-NSURLSession *session;
+GIFUrlSessionDataTask *dataTaskManager;
 
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    dataTaskManager = [[GIFUrlSessionDataTask alloc] init];
+    
     // gif image set corner radius
     _gif.layer.borderWidth = 3.0f;
     _gif.layer.borderColor = [[UIColor whiteColor] CGColor];
@@ -32,9 +35,16 @@ NSURLSession *session;
 {
     originalImage = gifImage.originalImage;
     if ([[gifImage user] avatarUrl] != NULL) {
-        NSURL *userAvatarUrl = [[NSURL alloc] initWithString:[[gifImage user] avatarUrl]];
-        [_avatar sd_setImageWithURL:userAvatarUrl placeholderImage:[UIImage imageNamed:@"default-user"]];
+        if ([[[gifImage user] avatarUrl] isEqualToString:@"RANDOM"]){
+            [_next setHidden:NO];
+            _avatar.image = [UIImage imageNamed:@"random"];
+        }else {
+            [_next setHidden:YES];
+            NSURL *userAvatarUrl = [[NSURL alloc] initWithString:[[gifImage user] avatarUrl]];
+            [_avatar sd_setImageWithURL:userAvatarUrl placeholderImage:[UIImage imageNamed:@"default-user"]];
+        }
     } else {
+        [_next setHidden:YES];
         _avatar.image = [UIImage imageNamed:@"default-user"];
     }
     if ([[gifImage user] userName] != NULL) {
@@ -49,16 +59,14 @@ NSURLSession *session;
 
 - (void)prepareForReuse
 {
-    [self cancelTasks];
+    [dataTaskManager cancelTask];
     NSLog(@"reused");
 }
 
 - (void)someRequest
 {
     [self startLoading];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:originalImage]];
-    session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
+    [dataTaskManager getImageData:originalImage completition:^(NSData *data, NSMutableURLRequest *request){
         image = [FLAnimatedImage animatedImageWithGIFData:data];
         dispatch_async(dispatch_get_main_queue(), ^{
             if (image == NULL) {
@@ -70,22 +78,7 @@ NSURLSession *session;
                     [self someRequest];
                 }
             }
-        });
-    }];
-    [dataTask resume];
-
-}
-
-- (void)cancelTasks
-{
-    [session getTasksWithCompletionHandler:^(NSArray *dataTasks, NSArray *uploadTasks, NSArray *downloadTasks) {
-        
-        if (!dataTasks || !dataTasks.count) {
-            return;
-        }
-        for (NSURLSessionTask *task in dataTasks) {
-            [task cancel];
-        }
+        });        
     }];
 }
 

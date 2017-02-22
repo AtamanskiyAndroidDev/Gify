@@ -18,7 +18,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    [self applyRounding:circle];
+    [self applyRounding:RoundingModeCircle];
 }
 
 @end

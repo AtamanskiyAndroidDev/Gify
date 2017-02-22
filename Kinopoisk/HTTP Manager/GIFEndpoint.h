@@ -8,22 +8,24 @@
 
 @interface GIFEndpoint : NSObject
 
-typedef NS_ENUM(NSInteger, HTTPMethod) {
+typedef NS_ENUM(NSInteger, HTTPMethod)
+{
     GET,
     POST,
     DELETE,
     PATCH
 };
 
-typedef NS_ENUM(NSInteger, Endpoint) {
+typedef NS_ENUM(NSInteger, Endpoint)
+{
     Trending,
     Random,
     Search
 };
 
-- (id)initWithEndpoint:(Endpoint)gifEndpoint;
-- (HTTPMethod)httpMethod;
-- (NSString*)url;
+- (id)initWithEndpoint:(Endpoint )gifEndpoint;
+- (HTTPMethod )httpMethod;
+- (NSString *)url;
 extern NSString* const API_KEY;
 
 @end

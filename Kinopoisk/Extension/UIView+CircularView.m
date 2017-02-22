@@ -20,9 +20,9 @@
 - (CGFloat)radiusWith:(RoundingMode)mode
 {
     switch (mode) {
-        case circle:
+        case RoundingModeCircle:
             return self.bounds.size.width / 2.0;
-        case withRadius:
+        case RoundingModeWithRadius:
             return 0;
     }
 }

@@ -12,14 +12,8 @@
 
 typedef NS_ENUM(NSInteger, RoundingMode)
 {
-    circle,
-    withRadius
-};
-
-typedef NS_ENUM(NSInteger, RoundingMod)
-{
-    RoundingModCircle,
-    RoundingModWithRadius,
+    RoundingModeCircle,
+    RoundingModeWithRadius
 };
 
 - (void)applyRounding:(RoundingMode)mode;
